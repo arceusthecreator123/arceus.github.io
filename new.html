@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html{
+  scroll-behavior: smooth;
+}
+a{text-decoration:none;color:white;}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 1em;
+  text-align: center;
+  color: #4F2050;
+  font-size: 30px;
+  height:600px;
+  vertical-align: middle;
+
+}
+.header div.backgr{ vertical-align:middle;}
+#Guide{
+border: 5px solid green;
+padding: 16px;
+box-sizing: border-box;
+border-radius:1em;
+width: 400px;
+margin: auto;
+font-size:45px;
+animation: move 2s ease-in-out infinite alternate;
+top: 0;
+color:#5F4B8BFF;
+}
+
+
+/* Page Content */
+.content {  background: #FFF;
+  color: white;
+  float:right;
+  width:85%;
+  
+  padding: 1em;
+  height:600px;
+  box-sizing: border-box;
+ }
+
+.boxx{
+background: #FC766AFF;
+border-radius:25px;
+padding:10px;
+font-size:35px;
+width: 600px;
+margin:25px 0;
+}
+
+
+
+/* The side navigation menu */
+.sidebar {
+  position: sticky;
+  top: 0;
+  float:left;
+  font-size: 20px;
+      margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+  
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+        
+  }
+  .sidebar a {float: left;}
+  .content {margin-left: 0;width:100%;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar {position: relative;}
+
+}
+.footer {
+  clear: both;
+  background: #666;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* keyframes */
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes box1{
+  50%{box-shadow: 5px 10px 25px #FC766AFF;}
+}
+@keyframes box2{
+  50%{box-shadow: -5px 10px 25px #5B84B1FF;}
+}
+@keyframes box3{
+  50%{box-shadow: 5px 10px 25px #E69A8DFF;}
+}
+@keyframes box4{
+  50%{box-shadow: -5px 10px 25px #5F4B8BFF;}
+}
+
+#bo1:hover{animation: box1 3s ease-in-out infinite alternate;}
+#bo2:hover{animation: box2 3s ease-in-out infinite alternate;}
+#bo3:hover{animation: box3 3s ease-in-out infinite alternate;}
+#bo4:hover{animation: box4 3s ease-in-out infinite alternate;}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+<div class="backgr" >
+    <img src="ten-major-challenges-big-data-analytics-healthcare.jpg"  width="900" height="450">
+</div>
+<a href="#List">
+<div id="Guide">Big Data <br>In Healthcare
+</div>
+</a>
+</div>
+
+<div class="sidebar">
+  <a class="active" href="new.html">Home</a>
+  <a href="1.html">BigData Overview</a>
+  <a href="2.html">BigData in Healthcare</a> 
+  <a href="3.html">Applications of BigData in Healthcare</a>
+  <a href="4.html">Challenges of BigData in Healthcare</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<div class="content" id="List">
+<a href='1.html'>
+<div class="boxx" id="bo1">Khái quát về Big Data
+</div>
+</a>
+<div style="float:right;">
+<a href='2.html'>
+<div class="boxx" style="background:#5B84B1FF;" id="bo2" >Big Data trong Y tế và Chăm sóc Sức Khỏe
+</div>
+</a>
+</div>
+<div style="float:left;">
+<a href='3.html'>
+<div class="boxx" style="background:#E69A8DFF;" id="bo3">Ứng dụng thực tế của Big Data trong chăm sóc sức khỏe
+</div>
+</a>
+</div>
+<div style="float:right;">
+<a href='4.html'>
+<div class="boxx" style="background:#5F4B8BFF;" id="bo4" >Những trở ngại còn sót lại trong việc ứng dụng Big Data trong chăm sóc sức khỏe
+</div>
+</a>
+</div>
+</div>
+
+
+<div class="footer">
+      <p>Group 123 làm BTL.</p>
+</div>
+
+
+
+</body>
+</html>

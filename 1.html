@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p{text-indent: 25px;}
+.backgr{ margin:auto;text-align:center;}
+/* Style the body */
+body {
+  font-family: Arial;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 1em;
+  text-align: center;
+  color: #4F2050;
+  font-size: 30px;
+  height:200px;
+  vertical-align: middle;
+}
+
+/* Page Content */
+.content {  background: #555;
+  color: white;
+  float:right;
+  width:85%;
+  font-size:18px;
+  padding: 1em;
+  box-sizing: border-box;
+  line-height: 1.6;
+
+ }
+.content>div{text-indent: 50px;}
+/* The side navigation menu */
+.sidebar {
+  position: sticky;
+  top: 0;
+  float:left;
+  font-size: 20px;
+      margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+  
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+        
+  }
+  .sidebar a {float: left;}
+  .content {margin-left: 0;width:100%;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar {position: relative;}
+
+}
+.footer {
+  clear: both;
+  background: #666;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<a href="new.html">
+<div class="header">
+<div class="backgr">
+    <img src="ten-major-challenges-big-data-analytics-healthcare.jpg"  width="550" height="200">
+</div>
+</div>
+</a>
+
+<div class="sidebar">
+  <a  href="new.html">Home</a>
+  <a class="active" href="1.html">BigData Overview</a>
+  <a href="2.html">BigData in Healthcare</a> 
+  <a href="3.html">Applications of BigData in Healthcare</a>
+  <a href="4.html">Challenges of BigData in Healthcare</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<div class="content">
+<h1>1.Khái quát về Big Data</h1>
+<h2>1.1  Định nghĩa về Big Data</h2>
+<p>Big Data đang dần trở thành một thuật ngữ quen thuộc trong cuộc sống ngày
+nay. Big Data lần đầu được đưa vào từ điển Oxford năm 2013. Trong đó, Big Data
+được định nghĩa là một tập hợp những thông tin rất lớn và phức tạp để có thể kiểm
+soát, phân tích, xử lí theo những phương pháp truyền thống. Bình thường, Big Data
+đánh giá tiêu chí "3 Vs": Khối lượng(Volume), Tốc độ(Velocity), Đa dạng(Variety).
+Tuy vậy, một bộ phận còn lại lại đánh giá Big Data không dựa trên kích thước mà
+phụ thuộc vào những công cụ được sử dụng hoặc những thông tin có thể được rút ra
+từ bảng số liệu.</p>
+<p>Do đó chúng ta có thể tham khảo những cách giải thích của các thought leaders
+ở mọi lĩnh vực để có thể trả lời chính xác Big Data là gì?</p>
+<p>Tuy vậy do vấn đề về độ dài nên chỉ trích dẫn ra một vài định nghĩa.</p>
+<div class="backgr" >
+    <img src="bigdata0.jpg"  width="450" height="300">
+</div>
+<p><i>Josh Ferguson - Lãnh đạo của Mode Analytics :</i><b>"BigData là một thuật ngữ dành
+cho những thách thức, cơ hội dành cho chúng ta khi những dữ liệu về mọi
+mặt quanh xung quanh cuộc sống dần trở nên phổ biến. Tuy vậy, nó
+không chỉ là những con số, mà còn là con người, các quá trình, sự phân
+tích để biến chúng trở nên hữu ích." </b></p>
+<p><i>Daniel Gillick - Nhà nghiên cứu của Google :</i><b>"Trước đây, hầu hết các quyết
+định, kể cả cá nhân và tập thể, thường được quyết định dựa trên những lí
+luận mang tính bất ngờ và hành động dựa trên kinh nghiệm. Big data
+đánh dấu sự thay đổi khi những quyết định được trợ giúp nhiều hơn từ
+những tính toán khoa học, những tài liệu, bằng chứng cụ thể. ’Big’ ở đây
+không nói về lượng dữ liệu mà cụ thể hơn là sự thay đổi này." </b></p>
+<p><i>David Leonhardt - Biên tập The New York Times :</i><b>"Big data là một công cụ thú
+vị, bên cạnh một vai trò như một người phóng viên, chụp ảnh, báo cáo, nó
+còn nắm giữ một tiềm năng lớn hơn trong việc ghi nhận lại thực tế một
+cách đầy đủ và chính xác hơn những gì chúng ta có thể làm trước đây. </b></p>
+<p>Từ đó, chúng ta có thể rút ra rằng Big Data đang đóng một vai trò quan trọng
+trong việc truyền đạt, xử lí thông tin ở khắp mọi nơi, tới mọi người. Nó quan trọng
+bởi cả cách những cách thức xử lí, truyền đạt, và cả lượng dữ liệu khổng lồ mà nó có
+thể đem lại cho mỗi người, trong nhiều lĩnh vực khác nhau.</p>
+<div class="backgr" >
+    <img src="bigdata1.png"  width="450" height="300">
+</div>
+<h2>1.2 Những tác động của Big Data lên nhiều lĩnh vực hiện nay</h2> 
+<p>Theo những dữ liệu từ năm 2019, thì khối dữ liệu toàn cầu sẽ đạt mức ít nhất
+là 40 nghìn tỷ GB, 40% trong số chúng đến từ những thiết bị cảm biến và những
+thông tin được trao đổi giữa các thiết bị(machine-to-machine information, both wired,
+wireles).</p>
+<div><i><b>Chăm sóc sức khỏe</b></i></div>
+<p>Chăm sóc sức khỏe đang dần trở nên số hóa qua những số liệu được cung cấp rồi
+qua phân tích để góp phần phát triển sức khỏe chúng ta hiện nay. Tất cả những dữ
+liệu của chúng ta sẽ góp phần trong việc kê đơn phù hợp với bản thân, nâng cao hiệu
+quả, giảm thiểu những sai sót. Không chỉ vậy, nhờ vào việc có thể truyền tải thông
+tin, các tiểu sử về bệnh trạng của bệnh nhân giờ không chỉ còn được lưu trữ ở một địa
+điểm nữa, qua đó còn có thể giúp bệnh nhân tăng cảm giác thoải mái khi phải nằm ở
+một phòng khám nào đó, cũng đang tận dụng những lợi ích từ những dữ liệu này.</p>
+<div class="backgr" >
+    <img src="bigdata2.jpg"  width="450" height="300">
+</div>
+<p><i>Từ đó chúng ta sẽ nói nhiều hơn về những ảnh hưởng của BigData tới chăm sóc sức
+khỏe cũng như chẩn đoán điều kiện sức khỏe của bệnh nhân.</i></p>
+<div><i><b>    Giáo dục</b></i></div>
+<p>Công nghệ đang len lỏi vào những lĩnh vực cụ thể trong cuộc sống, trong đó có việc số
+hóa các phòng học, đó là lí do big data mang những ảnh hưởng quan trọng trong giáo
+dục. Chúng ta đang dần chuyển từ việc giảng dạy truyền thống sang những tiết học
+kết hợp với những thiết bị trợ giảng giúp cho những bài học trở nên trực quan, sinh
+động hơn. Sự phát triển này giúp cho các trung tâm giáo dục có thể phát triển những
+phương pháp dạy học phù hợp với học sinh và thuyết phục hơn.</p>
+<div class="backgr" >
+    <img src="bigdata3.jpg"  width="450" height="300">
+</div>
+<p>Những thông tin được ghi nhận lại giúp cho nhà trường chuẩn bị những chiến lược để
+đạt được mục tiêu đề ra. Có thể kể ra những ví dụ, với big data, họ có thể tìm hiểu
+nguyên nhân, cách khắc phục, giúp đỡ học sinh vượt qua những khó khăn đang gặp
+phải, có thể nắm bắt những sở trường, sở thích để có thể phát triển học sinh theo
+một con đường hiệu quả nhất, thông qua đó, giúp học sinh có thể tự xây dựng một kế
+hoạch cho tương lai sắp tới. </p>
+<div><i><b>    Viễn thông</b></i></div>
+<p>Có thể thấy hiện nay, việc những nhà mạng có thể nắm hầu như thông tin về người
+sử dụng, vị trí, người thân, thói quen sử dụng điện thoại, internet, và hơn thế nữa, đã
+trở thành một câu chuyện bình thường hiện nay. Đó là kết quả của sự phát triển trong
+việc ghi nhận lịch sử cuộc gọi, thông tin khu vực, mạng xã hội và kể cả mạng lưới giao
+thông. Chỉ với việc ghi nhận thông tin khi đăng kí, mua, sử dụng dịch vụ mạng, lượng
+thông tin của mạng lưới viễn thông có thể tăng đột biến.</p>
+<div class="backgr" >
+    <img src="bigdata4.jpg"  width="450" height="300">
+</div>
+<p>Từ đó có thể nhận ra rằng rất nhiều viễn cảnh cho các công ty viễn thông thu được
+lợi nhuận từ những thông tin này. Họ có thể sử dụng chúng để phát triển, vượt mặt
+những công ty cùng ngành, tăng lợi nhuận, tăng thị phần của họ trong cả ngành thông
+qua marketing các dịch vụ mới, nắm bắt các giao dịch, hay kể cả ở các hành động bán
+thông tin khách hàng. Ví dụ có thể thấy là những hoạt động nhà đất, đa cấp có thể
+tìm tới bạn bất cứ lúc nào. Bên cạnh đó những dữ liệu được cung cấp bởi khách hàng
+còn giúp họ tối ưu hóa hệ thống hoạt động, dịch vụ để phụ hợp với như cầu của thị
+trường.</p>
+<div><i><b>    Ngân hàng</b></i></div>
+<p>Khá tương đồng với viễn thông, Ngân hàng cũng có thể nắm những thông tin quan
+trọng của người sử dụng. Có thể kể ra như số tiền còn trong tài khoản của bạn; số tiền
+ra, vào, tài khoản;.. Đây là những thông tin nền tảng để các ngân hàng có thể cung
+cấp những khoản ưu đãi, những khoản vay cho khách hàng; những rủi ro, lợi ích từ
+các quảng cáo tới khách hàng </p>
+<div><i><b>    Dịch vụ tiêu dùng</b></i></div>
+<p>Sự ảnh hưởng của Big Data lên lĩnh vực này là một điều tất yếu. Bên cạnh những lợi
+ích từ thông tin khách hàng, việc kiểm soát chi phí, số lượng và các thông tin của kho
+hàng cũng trở nên dễ dàng hơn nhờ vào sự xuất hiện của Big Data.</p>
+<div class="backgr" >
+    <img src="bigdata5.png"  width="450" height="300">
+</div>
+<p>Thông qua những số liệu biến động trên thị trường và các phương pháp phân tích số
+liệu, các doanh nghiệp có thể dự đoán những thay đổi trong tương lai và đưa ra các
+quyết định giao dịch hợp lí. Từ các dữ liệu thị trường và dữ liệu thời tiết, và những
+yếu tố bên ngoài tác động, các ước tính cung-cầu có thể được ước tính để dẫn tới hiệu
+quả cao nhất.</p>
+</div>
+<div class="footer">
+      <p>Group 123 làm BTL.</p>
+</div>
+
+
+
+</body>
+</html>

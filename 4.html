@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p{text-indent: 25px;}
+.backgr{ margin:auto;text-align:center;}
+/* Style the body */
+body {
+  font-family: Arial;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 1em;
+  text-align: center;
+  color: #4F2050;
+  font-size: 30px;
+  height:200px;
+  vertical-align: middle;
+}
+
+/* Page Content */
+.content {  background: #555;
+  color: white;
+  float:right;
+  width:85%;
+  font-size:18px;
+  padding: 1em;
+  box-sizing: border-box;
+  line-height: 1.6;
+
+ }
+.content>div{text-indent: 50px;}
+/* The side navigation menu */
+.sidebar {
+  position: sticky;
+  top: 0;
+  float:left;
+  font-size: 20px;
+      margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+  
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+        
+  }
+  .sidebar a {float: left;}
+  .content {margin-left: 0;width:100%;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar {position: relative;}
+
+}
+.footer {
+  clear: both;
+  background: #666;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<a href="new.html">
+<div class="header">
+<div class="backgr">
+    <img src="ten-major-challenges-big-data-analytics-healthcare.jpg"  width="550" height="200">
+</div>
+</div>
+</a>
+
+<div class="sidebar">
+  <a href="new.html">Home</a>
+  <a href="1.html">BigData Overview</a>
+  <a href="2.html">BigData in Healthcare</a> 
+  <a href="3.html">Applications of BigData in Healthcare</a>
+  <a class="active" href="4.html">Challenges of BigData in Healthcare</a>
+  <a href="about.html">About Us</a>
+</div>
+
+
+
+<div class="content">
+<h1>4. Những trở ngại còn sót lại trong việc ứng dụng Big Data trong
+Chăm sóc sức khỏe</h1>
+<p>Một trong những trở ngại lớn nhất đối với cách sử dụng dữ liệu lớn trong y học
+là cách dữ liệu y tế được truyền qua nhiều nguồn do các bang, bệnh viện và bộ phận
+hành chính khác nhau quản lý. Việc tích hợp các nguồn dữ liệu này sẽ yêu cầu phát
+triển một hệ thống mới, nơi tất cả các nhà cung cấp dữ liệu cộng tác với nhau.</p>
+<p>Như đã đề cập ở phía trên, việc tạo và hình thành những EHR cho mọi người ở
+rất nhiều nước vẫn đang đi vào bế tắc, điều này dẫn tới việc cần một phần mềm khai
+báo thông minh trực tuyến hữu ích và cả những chiến lược cụ thể. Bên cạnh đó cũng
+cần phải phát triển hơn những hệ thống hướng về tương lai hơn dựa trên những bản
+dự đoán, machine learning, AI, phân thích đồ thị.</p>
+<p>Cuối cùng, hãy luôn nhớ, bất kì ai cũng có nguy cơ nhiễm bệnh, vì vậy hãy nên
+quan tâm tới những ứng dụng phân tích sức khỏe hiện đại. Cũng hãy học học từ
+những nơi phát triển hơn trong cách họ xử lí các tình huống chúng ta đang gặp khó
+khăn để tìm ra hướng đi phù hợp cho sự phát triển sau này.</p>
+<div class="backgr" >
+    <img src="bigdata24.png"  width="450" height="300">
+</div>
+
+</div>
+<div class="footer">
+      <p>Group 123 làm BTL.</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p{text-indent: 25px;}
+.backgr{ margin:auto;text-align:center;}
+/* Style the body */
+body {
+  font-family: Arial;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 1em;
+  text-align: center;
+  color: #4F2050;
+  font-size: 30px;
+  height:200px;
+  vertical-align: middle;
+}
+
+/* Page Content */
+.content {  background: #555;
+  color: white;
+  float:right;
+  width:85%;
+  font-size:18px;
+  padding: 1em;
+  box-sizing: border-box;
+  line-height: 1.6;
+
+ }
+.content>div{text-indent: 50px;}
+/* The side navigation menu */
+.sidebar {
+  position: sticky;
+  top: 0;
+  float:left;
+  font-size: 20px;
+      margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+  
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+        
+  }
+  .sidebar a {float: left;}
+  .content {margin-left: 0;width:100%;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar {position: relative;}
+
+}
+.footer {
+  clear: both;
+  background: #666;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<a href="new.html">
+<div class="header">
+<div class="backgr">
+    <img src="ten-major-challenges-big-data-analytics-healthcare.jpg"  width="550" height="200">
+</div>
+</div>
+</a>
+
+<div class="sidebar">
+  <a href="new.html">Home</a>
+  <a href="1.html">BigData Overview</a>
+  <a href="2.html">BigData in Healthcare</a> 
+  <a class="active" href="3.html">Applications of BigData in Healthcare</a>
+  <a href="4.html">Challenges of BigData in Healthcare</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<div class="content">
+<h1>3. Những ứng dụng thực tế của Big Data trong Chăm sóc sức khỏe
+hiện nay</h1>
+<p>Hãy điểm qua những ứng dụng của Big Data và các số liệu trong việc phát
+triển những quá trình, chăm sóc sức khỏe, và hơn hết bảo vệ sức khỏe mọi người.</p>
+<div><i><b> Dự đoán bệnh nhân để quản lí nhân sự</b></i></div>
+<p>Trong một ca trực tại các phòng khám hay bệnh viện, hẳn bất kì người quản lí nào
+cũng gặp phải tình trạng kinh điển đó là: tôi sẽ phải phân phối người vào biên chế như
+thế nào để có thể kiểm soát được các ca trực?. Nếu như quá nhiều, kinh phí lao động
+tăng là điều không thể tránh khỏi. Nhưng nếu quá ít, dịch vụ Chăm sóc sức khỏe bệnh
+nhân có thể không được đảm bảo, và những sự cố đáng tiếc là điều không thể không
+nhắc tới.</p>
+<div class="backgr" >
+    <img src="bigdata10-1.png"  width="450" height="300">
+</div>
+<p>Big Data có thể cải thiện việc đó. Bằng chứng là một nhóm bệnh viện bên Pháp thuộc
+Assistance Public Hospital de Paris, đã thành công trong việc sử dụng những nguồn
+dữ liệu để tạo ra một bản dự đoán số lượng bệnh nhân sẽ có mặt ở từng bệnh viện vào
+mỗi giờ, trong từng ngày. Qua đó, bằng các phương pháp phân tích chuỗi thời gian,
+những nhà phân tích viên có thể tìm ra những nét tương đồng trong tỉ lệ xuất nhập
+viện ở mỗi thời điểm. Từ đó, kết hợp với những máy móc, thuật toán hiện đại, họ có
+thể cho ra những bản xu hướng khái quát về tỉ lệ xuất nhâp viện trong tương lai.
+</p>
+<p>Tổng hợp từ những điều trên, những nhà khoa học dữ liệu có thể cho ra những trang
+web dự báo lượng bệnh nhân hiện diện để giúp lập ra một bản kế hoạch nhân lực phù
+hợp nhất, để đạt được mục tiêu cải thiện việc chăm sóc bệnh nhân.</p>
+<div><i><b> Hồ sơ sức khỏe điện tử (EHRs)</b></i></div>
+<p>Đây có thể là một ứng dụng được nhắc đến rộng rãi của việc áp dụng Big Data
+trong Y tế. Mỗi bệnh nhân đều sở hữu những thông số, dữ liệu riêng, như thông tin cá
+nhân, tiền sử bệnh án, dị ứng, các kết quả xét nghiệm trong phòng thí nghiệm,.. Các
+thông tin ấy được bảo mật và chia sẻ an toàn và luôn sẵn sàng cho bệnh nhân, bác sĩ
+khi cần. Mỗi hồ sơ như vậy đề có những đề mục có thể sửa đổi để các bác sĩ có thể
+liên tục đưa những kết quả mới nhất mà không cần thông qua những thủ tục rườm rà
+hay các nguy cơ bị đánh cắp dữ liệu. Điểm hay của EHRs đó chính là nó cũng có thể
+cảnh báo, gợi ý cho mọi người nếu như cần tới những lần xét nghiệm, hay những chỉ
+dẫn, nhắc nhở về đơn thuốc của bác sĩ.</p>
+<p>Tuy vậy, điểm khó khăn trong cách thức này lại là điều kiện phát triển của mỗi
+nước, và rất nhiều nước vẫn đang vật lộn trong việc áp dụng ứng dụng này vào thực
+tế. Trên thế giới chỉ có duy nhất Hoa Kì là có thể đạt tới 94% tổng số các bệnh viện áp
+dụng EHRs, theo nghiên cứu từ HITECH (21st/Oct/2020), trong khi kể cả các nước
+châu Âu vẫn đang bị tụt lại phía sau.
+</p>
+<div class="backgr" >
+    <img src="bigdata11.jpg"  width="450" height="300">
+</div>
+<p>Kaiser Permanente đang dẫn đầu tại Hoa Kì về ứng dụng này và đây có thể là hình
+mẫu lí tưởng để các nước có thể học theo. Họ triển khai hoàn chỉnh một hệ thống
+mang tên HealthConnect giúp cho những dữ liệu về bệnh nhân của họ được trao đổi
+một cách mượt mà giữa các phòng ban giúp cho việc sử dụng EHRs trở nên dễ dàng
+hơn rất nhiều. Theo báo cáo của McKinsey thì việc áp dụng hệ thống tích hợp trên
+mà đã tiết kiệm được hơn 1 tỷ dollar từ những lần xét nghiệm trong phòng thí nghiệm.
+</p>
+<div><i><b> Cảnh báo về hiện tại(real-time warning)</b></i></div>
+<p>Đây có thể hiểu theo một cách khác đó chính là bạn sẽ được theo dõi sức khỏe tại nhà
+bởi những bác sĩ tại bệnh viện thông qua các thiết bị. Đây là kết quả của những bác
+sĩ mong muốn bệnh nhân thực hiện các chăm sóc sức khỏe tại nhà thay vì thông qua
+những buổi chăm sóc sức khỏe tại bệnh viện với chi phí cao.</p>
+<p>Một trong những sản phẩm đã ra đời dựa trên nhu cầu trên đó chính là thiết bị
+đeo tay thông minh. Những tình trạng của bệnh nhân sau khi được đo đạc sẽ được
+thiết bị này liên tục lên bộ nhớ đám mây. Những dòng dữ liệu khổng lồ này sẽ trải qua
+những bước đánh giá, phân tích cụ thể với sự kết hợp của những phần mềm Clinical
+Decision Support(CDS) sẽ giúp các bác sĩ có những so sánh trực quan nhất và đưa ra
+những bước hành động, những đơn thuốc hợp lí. Ví dụ: khi một bệnh nhân mắc bệnh
+về huyết áp tăng cao báo động, hệ thống sẽ gửi lập tức những cảnh báo tới bác sĩ và
+những biện pháp tạm thời, những hành động tiếp cận tới bệnh nhân sẽ được thực hiện
+ngay lập tức để làm giảm huyết áp.
+</p>
+<div class="backgr" >
+    <img src="bigdata12-1.jpg"  width="450" height="300">
+</div>
+<p>Một thiết bị khác có thể kể tới đó chính là ống hít có gắn định vị GPS của Asthmapolis
+để xác định mức độ hen xuyễn theo từng khu vực, nhóm người khác nhau. Dữ liệu
+cũng được xử lí và đánh giá cùng với CDS để có những biện pháp, kế hoạch điều trị
+tốt cho các bệnh nhân hen xuyễn.</p>
+<div class="backgr" >
+    <img src="bigdata12-2.png"  width="450" height="300">
+</div>
+<div><i><b>Tăng cường sự tham gia của bệnh nhân</b></i></div>
+<p>Mọi người, đặc biệt là những người có nguy cơ mắc bệnh cao(potential patien), luôn
+có sự ưa thích đối với các ứng dụng, thiết bị thông minh mà có thể ghi lại từng thay
+đổi, từng nhịp tim, từng nhịp thở của họ,.. một cách thường xuyên. Những thông tin
+này có thể được kết hợp thêm bởi những dữ liệu có thể theo dõi khác để theo dõi, xác
+định những nguy cơ gây bệnh đang rình rập. Một ví dụ điển hình đó chính là nếu một
+người thường xuyên bị mất ngủ mãn tính, hay nhịp tim thường tăng cao, thiết bị sẽ
+liên tục gửi cảnh báo để cho người đó có những chuẩn bị trước nguy cơ về bệnh tim
+tăng cao. Việc mọi người có thể tự tham gia vào các hoạt động tự theo dõi và chăm
+sóc sức khỏe sẽ giúp họ có ý thức về sự phòng bệnh, và một lối sống lành mạnh hơn.
+Điều này cũng sẽ góp phần tiết kiệm những khoản chi tiêu khổng lồ cho mỗi lần ’ghé
+thăm’ phòng khám bệnh, những lần xét nghiệm không cần thiết.
+</p>
+<p>Không chỉ về phía bệnh nhân, điều này còn được đánh giá là một phần rất quan
+trọng trong mỗi tổ chức y tế. Việc có thể tăng sự tự tham gia của các bệnh nhân còn
+giúp những buổi vắng mặt kiểm tra y tế, tăng những buổi hẹn có ích cho các bác sĩ,
+tiết kiệm được những thời gian chờ, mang lại những lợi ích tích cực cho các phòng khám, bệnh viện. Dưới đây là những gì đã đạt được theo chuẩn ROI của tổ chức được
+đứng đầu bởi bà Geeta Nayyar, nhưng tất nhiên mọi thứ sẽ còn phát triển hơn nữa,
+theo Tiến sĩ Geeta Nayyar, người đứng đầu tổ chức Healthcare and Innovation Officer
+for Femwell Group Health
+<div class="backgr" >
+    <img src="bigdata13.jpg"  width="450" height="300">
+</div>
+"Cũng bằng sự tiến bộ này, các bác sĩ và bệnh nhân có thể tìm gặp nhau tại những
+điểm cần thiết nhất, điều này còn giúp tăng sự hài lòng của bệnh nhân qua trải nghiệm
+khám bệnh..." - Geeta Neyyar
+</p>
+<div><i><b>Ngăn chặn việc lạm dụng thuốc</b></i></div>
+<p>Theo như những thống kê năm 2020, thì việc lạm dụng thuốc, heroin, thuốc giảm
+đau, fetaryl,.. dẫn đến tử vong tại Mĩ đã vượt qua tai nạn giao thông để trở thành
+tử thần với người dân nơi đây, với mức trung bình 128 người chết trên một ngày. [9]
+Không chỉ Mĩ,theo chuyên gia phân tích Bernard Marr đã viết trên tờ Forbes, Chính
+phủ Canada đã đề cập tới việc lạm dụng thuốc như một cuộc khủng hoảng y tế quốc
+gia(national health crisis) và tổng thống Obama đã dành 1,1 tỷ dollar để giúp đất nước
+này về vấn đề trên khi ông còn đương nhiệm.
+</p>
+<p>Một lần nữa, những ứng dụng của những kĩ thuật phân tích Big Data được xem
+như là câu trả lời mà mọi người đang đi tìm kiếm. Các nhà khoa học dữ liệu tại Blue
+Cross Blue Shield đã cùng hợp tác với các phân tích viên tại Fuzzy Logix để tìm ra những hướng khắc phục. Qua đó, việc sử dụng các dữ liệu được ghi lại sau hàng năm
+trời về bảo hiểm và các loại dược phẩm, họ đã có thể chỉ ra 742 yếu tố xác định liệu
+một người có đang nằm trong tình trạng đang, sẽ mắc nguy cơ lạm dụng thuốc.</p>
+<div class="backgr" >
+    <img src="bigdata14.jpg"  width="450" height="300">
+</div>
+<p>Tuy vậy, việc có thể tiếp cận được tới những người đang mắc nguy cơ này cũng còn
+nhiều khó khăn, nhạy cảm. Nhưng những dự án như vậy vẫn mang lại những hi vọng
+tích cực trong việc giảm thiểu một vấn đề hủy hoại đời sống con người và tiêu tốn tiền
+bạc như trên.</p>
+<div><i><b>Sử dụng dữ liệu sức khỏe cho những chiến lược dịch vụ khác</b></i></div>
+<p>Việc sử dụng các loại dữ liệu trong chăm sóc sức khỏe cho phép những chiến lược,
+kế hoạch cụ thể của các tập đoàn nhờ vào sự phân tích, tìm hiểu những nhu cầu của
+mọi người. Ví dụ như những nhà quản lí sức khỏe có thể tìm ra được những nguyên
+nhân, yếu tố ảnh hưởng tới mong muốn điều trị của mỗi người.
+</p>
+<p>Bên cạnh đó là những chiến lược, sự ra đời của các dịch vụ sức khỏe cộng đồng.
+Đại học Florida(University of Florida) đã áp dụng Google Maps và các dữ liệu sức
+khỏe cộng đồng lập ra những bản đồ nhiệt về sự phân bố của các nhu cầu, bệnh tật,
+theo đó, các nhà phân tích có thể so sánh mức độ cần so với những gì sẵn có tại những
+khu vực đó để có những điều chỉnh hợp lí, xem xét lại mức độ phân bố, bổ sung thêm
+các đơn vị chăm sóc sức khỏe theo nhu cầu. </p>
+<div class="backgr" >
+    <img src="bigdata15.jpg"  width="450" height="300">
+</div>
+<p>Từ những vấn đề trên, những khóa học về kế hoạch cung cấp, phân phối dịch vụ trong
+chăm sóc sức khỏe được ra đời. Đây là khóa học mà cả những chuyên gia sức khỏe
+cũng cần tới. Nó cung cấp những kiến thức về sự hiệu quả trong một kế hoạch cung
+cấp dịch vụ sức khỏe, những hiểu biết về các chính sách, kĩ thuật phân tích dữ liệu để
+đưa ra các quyết định đáp ứng được nhu cầu khách hàng. Một ví dụ điểm hình đó là
+Strategic Service Planning and Delivery in Health and Social Care của đại học RGU
+tại Anh Quốc.</p>	
+<div><i><b>Phân tích dự đoán trong chăm sóc sức khỏe
+</b></i></div>
+<p>Phải nhắc lại, Phân tích dự đoán đang trở thành xu hướng thông minh trong nhiều
+năm trở lại đây, và các ứng dụng tiềm năng của chúng còn sẽ phát triển nhiều hơn
+nữa trong nhiều năm tới. Optum Lab, một nghiên cứu cộng tác ở Mĩ, đã và đang thu
+thập hơn 30 triêu EHRs của các bệnh nhân để tạo thành các cơ sở dữ liệu cho các ứng
+dụng và công cụ phân tích dự đoán để tiếp tục cải thiện các dịch vụ chăm sóc sức khỏe.</p>	
+<p>Mục tiêu sau tất cả là nâng tầm tốc độ đưa ra những quyết định trong thời gian
+ngắn nhất và cải thiện điều trị cho bệnh nhân. Điều này là vô cùng quan trọng hữu
+ích đối với các bệnh nhân có tiền sử bệnh phức tạp khi từng vướng phải nhiều bệnh
+lí. Đó là sự ảnh hưởng tích cực từ các công cụ, giải pháp BI(Business Intelligence) vào
+Big Data trong ngành Y tế.</p>	
+<div><i><b>Giảm những sai phạm và tăng cường bảo mật
+</b></i></div>
+<p>Với dòng dữ liệu khổng lồ được luân chuyển hàng ngày, việc rò rỉ những thông tin
+chăm sóc sức khỏe qua những sai phạm dữ liệu là điều không thể tránh khỏi, tuy vậy
+mức độ mắc phải theo một vài nghiên cứu đã chỉ ra 93% các tổ chức sức khỏe gặp phải
+vấn đề này (2020), mức thiệt hại có thể tính tới 1,5% lợi nhuận kiếm mỗi năm. [11]
+Lí do thì cực kì đơn giản vì những thông tin có giá cực kì cao và dễ sinh lời trên thị
+trường chợ đen trong thời đại công nghệ thông tin tiến tiến như hiện nay. Và tất nhiên
+những thiệt hại chúng gây ra là vô cùng nặng nề.</p>	
+<p>Với sự nhận thức, nhiều tổ chức đã áp dụng những kĩ thuật phân tích dữ liệu để
+ngăn chặn các mối đe dọa bảo mật bằng cách xác định những thay đổi trong dòng
+chảy thông tin hoặc những hành vi khả nghi nào khác được cho rằng liên quan tới tấn
+công mạng; rà soát lại những lần giao dịch, trao đổi thông tin để đảm bảo không có bất
+kì bên thứ ba nào tác động. Bên cạnh đó, việc kết hợp với các phần mềm hiện đại có thể
+biến cách phòng chống trở thành một kế hoạch sáng tạo trong nhiều hướng. Ví dụ như:</p>	
+<ol>
+<li>Phát triển quá trình tìm kiếm và xác định nguy cơ gây hại.
+</li>
+<li>Phát triển hệ thống phát hiện những phần mềm, các kho lưu trữ bảo mật thấp.</li>
+<li>Hệ thống nhắc nhở về việc bảo mật cho mọi người.</li>
+<li>Vì những hành vi sai phạm sẽ luôn biến hóa khôn lường, các hệ thống phải thường
+xuyên được nâng cấp, các dữ liệu phải thường xuyên được phân tích dưới những
+thiết bị, công nghệ hiện đại để luôn có những kế hoạch cho mọi tình huống xảy
+ra.</li>
+</ol>
+<div class="backgr" >
+    <img src="bigdata16.png"  width="450" height="300">
+</div>
+<p>Tất nhiên, việc sử dụng dữ liệu như một yếu tố trong công tác phòng ngừa sẽ luôn hiện
+hữu những vấn đề về bảo mật khiến cho nhiều người nghĩ điều đó sẽ làm cho các công
+ty dễ dàng bị tấn công hơn. Nhưng những tiến bộ trong công nghệ bảo mật như công
+nghệ mã hóa, tường lửa, các phần mềm chống virus,.. sẽ giúp các công ty có những
+giải pháp tốt trong việc đáp ứng nhu cầu bảo mật.</p>	
+<p>Tương tự công tác bảo mật, việc áp dụng các cách thực hiện trên có thể giúp các
+quá trình giao dịch của bệnh nhân và những người thanh toán trở nên nhanh chóng,
+gọn gàng hơn. Theo ghi nhận, trung tâm dịch vụ Medicare and Medicaid(the Centers
+of Medicare and Medicaid Services) đã thành công bảo vệ 210 triệu dollar trong một
+năm khỏi những sai phạm, rủi ro trên.</p>	
+<div><i><b>Y học từ xa(Telemedicine)
+</b></i></div>
+<p>Telemedicine đã có mặt từ hơn 40 năm, nhưng chỉ từ khi xuất hiện những phương
+tiện truyền thông không dây và có dây, nó mới thực sự phát triển mạnh mẽ. Đây là
+một thuật ngữ để đề cập tới việc cung cấp việc kiểm tra, khám bệnh từ xa thông qua
+các thiết bị công nghệ và AI</p>
+<div class="backgr" >
+    <img src="bigdata17.jpg"  width="450" height="300">
+</div>	
+<p>Phương pháp này được sử dụng chủ yếu trong các trường hợp chẩn đoán bệnh ban
+đầu, theo dõi bệnh nhân từ xa, giáo dục những kiến thức y tế mới. Tuy vậy, một ứng
+dụng nổi trội hiện nay, đó là kết hợp với AI để thực hiện những cuộc phẫu thuật từ
+xa. Các bác sĩ sẽ thực hiện ca mổ thông qua robot được cung cấp các dữ liệu về thời
+gian thực liên tục, dưới tốc độc cao, mà không nhất thiết phải ở cùng phòng với bệnh
+nhân. Bên cạnh đó, kết hợp với phương pháp Phân tích dự đoán sức khỏe đã đề cập từ trước để các bác sĩ có thể đưa ra các kế hoạch điều trị phù hợp với mỗi cá nhân, dự
+đoán các trường hợp xảy ra, ngăn ngừa tình trạng bệnh diễn biến xấu đi khi các bệnh
+nhân đang được điều trị tại nhà. Đây sẽ là bước tiến trong việc giảm chi tiêu trong
+việc đi đến bệnh viện, tiết kiệm thời gian chờ và những thủ tục không cần thiết.
+</p>	
+<div><i><b>Tích hợp những thông tin từ Big Data trong các bức ảnh
+</b></i></div>
+<p>Các hình ảnh trong y tế đóng vai trò rất quan trọng, mỗi năm ở Mĩ có khoảng 600
+triêu những bức ảnh trong công tác được thực hiện. Việc phân tích và lưu trữ thủ công
+các bức ảnh này được đánh giá là rất tốn kém, và mất thời gian, giả sử như một bức
+ảnh X-quang cần được phân tích nhiều lần và có thể sử dụng đi sử dụng lại trong vài
+năm, nhưng trong một năm số lượng ảnh lại rất lớn.</p>	
+<p>Một chuyên gia về hình ảnh trong Y tế Carestream đã chỉ ra rằng việc áp dụng
+các phân tích lên từng bức ảnh sẽ thay đổi cách đọc hình ảnh: các thuật toán được
+phát triển sẽ phân tích từng pixels ảnh trên cả ngàn tấm ảnh để đưa ra một con số
+cụ thể, một ước tính giúp các bác sĩ chẩn đoán. Thậm chí trong tương lai, các bác sĩ
+có thể không cần nhìn vào những tấm ảnh nữa mà chỉ cần phân tích kết quả do các
+thuật toán xuất ra chắc chắn sẽ còn nghiên cứu được nhiều hơn những tấm ảnh họ
+có thể thấy trong đời. Điều này sẽ ảnh hưởng rất lớn tới bộ kĩ năng của bác sĩ trong
+tương lai xa, đó là điều chắc chắn.</p>	
+<div><i><b>Giảm thiểu những buổi xét nghiệm thừa (Unnecessary ER visits)
+</b></i></div>
+<p>Việc chia sẻ các dữ liệu bệnh nhân giữa các bệnh viện phòng khám, có thể giúp
+các bệnh viện sau này có thể bỏ qua các bước xét nghiệm tốn kém, cũng bên cạnh đó
+việc xin phép lại hồ sơ ở chỗ những phòng khám, bệnh viện cũ, thông qua việc gửi
+mail hay fax sẽ được bỏ qua, giúp chúng ta tiết kiệm được rất nhiều thời gian.</p>	
+<p>Một ví dụ điển hình cho sự tiện ích của ứng dụng này đó là trường hợp của một
+người phụ nữ giấu tên ở Oakland, California, người trong vòng 3 năm phải trải qua
+900 cuộc kiểm tra trong ER(Emergency Room). Để không phải tiếp tục trải qua những
+cuộc xét nghiệm với tình trạng như vậy, bệnh viện nơi đó đã thành lập ra chương trình
+PreMange ED, cho phép trao đổi hồ sơ của bệnh nhân giữa các phòng ER.
+</p>
+<div><i><b>Tự học tập và Phát triển trong mỗi tổ chức
+</b></i></div>	
+<p>Ở bệnh viện hay các cơ sở y tế, các kỹ năng, sự tự tin, khả năng của các nhân
+viên có thể dẫn tới sự khác biệt giữa ranh giới sự sống và tử thần. Đương nhiên, trình
+độ của các bác sĩ, chuyên gia sẽ rất chuyên nghiệp trong lĩnh vực của họ. Tuy vậy, đây
+lại là nơi mà rất nhiều người cùng làm việc, từ những nhân viên phục vụ, tới các thư
+ký hành chính, y tá cho tới những chuyên gia cấp cao.</p>	
+<p>Trong lĩnh vực chăm sóc sức khỏe, kỹ năng mềm đóng vai trờ quan trọng không
+khác gì bằng cấp. Để giữ cho tổ chức hoạt động một cách trơn tru với công suất tối
+ưu, mỗi người phải luôn tự trau dồi và phát triển qua từng ngày. Bằng cách theo dõi
+hiệu suất làm việc của nhân viên và những ghi chép dữ liệu hoạt động, người quản lí
+có thể nhận thấy được những vị trí cần sự rèn luyện nhiều hơn hay những sự trợ giúp
+kịp thời. Nếu mọi tổ chức và mọi thành viên có thể tự thay đổi và phát triển theo
+những sự thay đổi của thời thế, những kết quả trong Chăm sóc sức khỏe bệnh nhân và Y tế cũng sẽ trở nên tiến bộ một cách rõ rệt.</p>
+<div class="backgr" >
+    <img src="bigdata18.jpg"  width="450" height="300">
+</div>	
+<div><i><b>Phòng tránh các nguy cơ Tự tử và Tự làm hại bản thân
+</b></i></div>
+<p>Theo thống kế, trên toàn cầu, mỗi năm gần 800000 người chết về tự tử, ngoài ra
+gần 17% dân số thế giới sẽ tự làm hại bản thân trong cuộc đời của họ - những con số
+đáng báo động. Tuy vậy, việc sử dụng Big Data trong Chăm sóc sức khỏe đang góp
+phần ngăn chặn những con số báo động này. Các tổ chức sức khỏe đang dựa trên chúng
+để có thể xác định và ngăn chặn những cá nhân đang tự gây hại đến chính bản thân họ.</p>
+<p>Theo một nghiên cứu năm 2018 từ KP và Mental Health Research Network, kết hợp
+cùng EHR và bảng câu hỏi xác định trầm cảm tiêu chuẩn, các tổ chức đã xác định
+được những cá nhân có nguy cơ tự tử cao với độ chính xác cao. Điều này đã cải thiện
+rất lớn trong giảm thiểu khả năng các vụ tự tử và tỉ lệ thành công trong các hành vi
+ấy.</p>
+<p>Đây là một minh chứng cụ thể, rõ ràng về việc sử dụng Big Data có thể cứu sống rất
+nhiều mạng người. <i>"Chúng tôi đã chứng minh EHR kết hợp với các công cụ phân tích
+khác có thể xác định chính xác những người đang tự cố gắng tự sát hay đang trong tình
+trạng làm hại bản thân mình"</i> -theo Gregory E. Simon, MD, MPH, một điều tra viên
+cấp cao tại viện nghiên cứu sức khỏe Kaiser Permanente Washington.</p>
+<div><i><b>Quản lí chuỗi cung ứng
+</b></i></div>
+<p>Nếu chuỗi cung ứng của một cơ sở y tế bị suy yếu hay tan vỡ, mọi thứ khác đều
+sẽ chịu những liên lụy, từ chăm sóc bệnh nhân, các phương pháp điều trị, cho tới tình
+hình tài chính dài hạn và hơn thế nữa. Điều đó dẫn tới một ứng dụng tiếp theo nữa của
+Big Data đó chính là giúp cho chuỗi cung ứng hoạt động trơn tru, hiệu quả từ đầu tới
+cuối. Việc tận dụng được những số liệu được xử lí qua các công cụ phân tích về hiệu suất
+chuỗi cung ứng cũng như những quyết định kịp thời chính xác dựa trên những dữ liệu
+về tình hình hoạt động có thể giúp một bệnh viện tiết kiệm tới 10 triêu dollar từng năm.
+</p>
+<div class="backgr" >
+    <img src="bigdata19.jpg"  width="450" height="300">
+</div>	
+<p>Dựa trên những mô hình mô tả và dự đoán, sự tiến triển có thể xảy ra trong toàn bộ
+các quá trình từ đàm phán giá cả, nguồn cung cấp, và quy trình đặt hàng. Từ đó, các
+trung tâm y tế có thể yên tâm thực hiện những nhiệm vụ của mình cho bệnh nhân mà
+không lo về các nguy cơ chậm trễ, tắc nghẽn trong các phương pháp chăm sóc, điều trị.</p>
+<div><i><b>Quản lí về các nguy cơ sức khỏe và bệnh dịch
+</b></i></div>
+<p>Bên cạnh việc ngăn ngừa những rủi ro về sức khỏe, hay tiết kiệm những khoản thời
+gian tới bệnh viện, Big Data kết hợp với AI còn giúp ích rất nhiều trong việc quản lí
+bệnh dịch.</p>
+<p>Ví dụ đầu tiên có thể kể đến dịch cúm gà H1N1 từng làm cơ sở y tế lo sợ về một
+dịch bệnh lây lan mạnh vào năm 2009. Và câu chuyện ở Mĩ đã cho thấy sức mạnh của
+Google và các phương pháp tìm kiếm, xử lí dữ liệu.</p>
+<p><i>"Ở Mỹ, Trung tâm Kiểm soát và Phòng chống Bệnh dịch (CDC) đã yêu cầu các bác sĩ
+thông báo về các ca bệnh cúm mới. Nhưng bức tranh thật về đại dịch vẫn luôn bị chậm
+trễ một hoặc hai tuần. Nhiều người có thể bị bệnh vài ngày rồi mới đi gặp bác sĩ. Việc
+chuyển tiếp thông tin về các cơ quan trung ương đòi hỏi thời gian, và CDC chỉ xử lý
+các con số mỗi tuần một lần. Với một bệnh dịch lây lan nhanh, hai tuần chậm trễ cũng
+giống như dài vô tận. Sự chậm trễ này đã hoàn toàn vô hiệu hóa các cơ quan y tế tại
+những thời điểm gay cấn nhất.</i><br>
+<i>Lúc việc đó xảy ra, vài tuần trước khi vi-rút H1N1 xuất hiện rầm rộ trên các phương
+tiện truyền thông, các kỹ sư của công ty Internet khổng lồ Google đã đăng một bài đáng
+chú ý trên tạp chí khoa học Nature. Nó đã tạo một chuyện giật gân trong giới chức y
+tế và các nhà khoa học máy tính, nhưng ngoài ra thì ít được quan tâm. Các tác giả lý
+giải Google có thể “dự đoán” sự lây lan của bệnh cúm mùa đông ở Mỹ như thế nào,
+không chỉ ở mức độ toàn quốc, mà còn chi tiết tới mức vùng và thậm chí tới mức tiểu
+bang. Google có thể đạt được điều này bằng cách xem xét những gì người sử dụng đã
+tìm kiếm trên Internet. Bởi Google nhận được hơn ba tỷ câu hỏi tìm kiếm mỗi ngày và
+lưu giữ tất cả chúng, nên nó có vô số dữ liệu để phân tích. Tổng cộng, họ xử lý một
+lượng đáng kinh ngạc 450 triệu mô hình toán học khác nhau để kiểm tra các điều kiện
+tìm kiếm, so sánh các dự đoán của họ với các trường hợp bệnh thực tế từ CDC trong
+năm 2007 và 2008. Và họ đã vớ được vàng: phần mềm của họ tìm thấy một sự kết hợp
+của 45 điều kiện tìm kiếm mà khi sử dụng cùng với một mô hình toán học, có một mối
+tương quan mạnh mẽ giữa phỏng đoán của họ và các số liệu chính thức trên toàn quốc.</i><b>Giống như CDC, họ có thể cho biết cúm đã lây lan tới đâu, nhưng khác với
+CDC, họ có thể nói điều đó gần như trong thời gian thực, chứ không phải trễ một hoặc hai tuần."</b>
+</p>
+<div class="backgr" >
+    <img src="bigdata20.jpg"  width="450" height="300">
+</div>	
+<p>Hay gần đây nhất là dịch Corona Virus. Nhờ vào thời đại công nghệ tiên tiến như hiện
+nay, các khuyến cáo về bệnh dịch được truyền đi một cách rộng rãi tới mọi người để ai
+cũng có thể có những kiến thức phòng chống cơ bản, hiệu quả đối với dịch bệnh này.
+Các dữ liệu thu thâp được từ dịch bệnh sẽ được tổng hợp và hiển thị một cách tức
+thời, trực quan, liên tục qua các bảng điều khiển, Data Visualization, hay các trang
+web cập nhật dịch bệnh đáng tin cậy như coronatracker.com. Nguồn dữ liệu luôn được
+làm mới và tới từ những nguồn tin cậy như WHO, CDC, Bộ Y tế của mỗi quốc gia,
+tiểu bang, sẽ luôn cho mọi người những cái nhìn trực quan nhất về tình hình dịch hiện
+tại. Bên cạnh đó, các lập trình AI, Bluedot, cũng được đưa vào dựa trên những số
+liệu được cập nhật liên tục và các thuật toán cũng sẽ giúp ích cho những tổ chức Y tế
+những cái nhìn, kế hoạch cho những diễn biến tiếp theo của dịch bệnh. Đó chỉ là một
+vài ví dụ của sự kết hợp giữa Big Data và AI trong việc tuyên truyền và kiểm soát
+dịch bệnh vì bên cạnh đó còn là những ứng dụng giúp ghi chép hành trình của mỗi
+người, hay bên Trung Quốc đó là ứng dụng phân tích những luồng dân di/nhập cư,
+như Baidu Maps, để có những phán đoán kịp thời cho dịch bệnh này. </p>	
+<div><i><b>Phát triển các phương pháp mới và những cải tiến mới
+</b></i></div>
+<p>Không thể phủ nhận một tương lai đang rất đáng mong chờ trong lĩnh vực Chăm
+sóc sức khỏe khi có sự ảnh hưởng của các phương pháp phân tích dữ liệu Big Data.
+Bằng cách kết hợp những kết quả cụ thể được ghi chép trong lịch sử, những gì diễn
+ra hiện tại, thông qua các công cụ phân tích, trực quan hóa dữ liệu, những chuyên gia
+chăm sóc sức khỏe có thể xác định những điểm mạnh, yếu trong quá trình phát triển
+những phương pháp điều trị hay những quy trình phát triển các loại thuốc mới.</p>	
+<p>Bên cạnh đó, thông qua phân tích những thông tin di truyền theo hướng dữ liệu
+cũng như các dự đoán phản ứng ở bệnh nhân, phân tích Big Data trong chăm sóc sức
+khỏe có thể đóng một vai trò quan trọng trong việc phát triển các loại thuốc mới đột
+phá và các liệu pháp tư duy tương lai. Phân tích dữ liệu trong chăm sóc sức khỏe có
+thể phát triển hơn, cung cấp bảo mật và cứu sống rất nhiều mạng sống. Nó mang lại
+sự tự tin, hi vọng, và đó là con đường phía trước.
+</p>	
+<div class="backgr" >
+    <img src="bigdata21.jpg"  width="450" height="300">
+</div>	
+<div><i><b>Những hứa hẹn cho căn bệnh ung thư
+</b></i></div>
+<p>Big Data hiện còn đang được áp dụng cho chương trình Cancer Moonshot, một chương
+trình nghiên cứu về bệnh ung thư. Trước khi kết thúc nhiệm kì thứ II của bản thân
+mình, tổng thống Barrack Obama đã thành lập ra chương trình này với mục tiêu có
+thể tìm ra phương pháp trị ung thư trong 5 năm tới.
+</p>	
+<p>Các nhà nghiên cứu y học có thể sử dụng một lượng lớn dữ liệu về quá trình điều
+trị và tỷ lệ hồi phục của bệnh nhân ung thư để tìm ra các xu hướng và phương pháp
+điều trị có tỷ lệ thành công cao nhất trong thực tế. Ví dụ, các nhà nghiên cứu có thể
+kiểm tra các mẫu khối u trong các ngân hàng sinh học được liên kết với hồ sơ điều
+trị của bệnh nhân. Sử dụng dữ liệu này, các nhà nghiên cứu có thể thấy những thứ
+như cách một số đột biến và protein ung thư tương tác với các phương pháp điều trị
+khác nhau và tìm ra các xu hướng sẽ dẫn đến kết quả tốt hơn cho bệnh nhân.<i> Dữ
+liệu này cũng có thể dẫn đến những kết quả bất ngờ, chẳng hạn như phát hiện ra rằng
+Desipramine, một loại thuốc chống trầm cảm, có khả năng giúp chữa khỏi một số loại
+ung thư phổi.</i></p>	
+<div class="backgr" >
+    <img src="bigdata22.jpg"  width="450" height="300">
+</div>	
+<p>Tuy nhiên, để cung cấp nhiều thông tin chi tiết hơn, cơ sở dữ liệu bệnh nhân từ các tổ
+chức khác nhau như bệnh viện, trường đại học và tổ chức phi lợi nhuận cần được liên kết với nhau. Sau đó, các nhà nghiên cứu có thể truy cập các báo cáo sinh thiết của
+bệnh nhân từ các tổ chức khác. Một trong những trường hợp tiềm năng sử dụng Big
+Data trong chăm sóc sức khỏe sẽ là ghi lại trình tự di truyền các mẫu mô ung thư từ
+bệnh nhân thử nghiệm lâm sàng và cung cấp những dữ liệu này cho cơ sở dữ liệu ung
+thư lớn hơn.</p>	
+<p>Tuy nhiên còn rất nhiều trở ngại trên con đườn phát triển:</p>	
+<ul>
+<li>Hệ thống dữ liệu không tương thích. Đây có lẽ là thách thức kỹ thuật lớn nhất,
+vì làm cho các tập dữ liệu này có thể liên kết với nhau là một kỳ công.
+</li>
+<li>Vấn đề bảo mật của bệnh nhân. Có các luật khác nhau theo từng tiểu bang quy
+định thông tin bệnh nhân nào có thể được tiết lộ khi có hoặc không có sự đồng ý,
+những vấn đề này cần được thống nhất.</li>
+<li> Nói một cách đơn giản, các tổ chức đã dành nhiều thời gian và tiền bạc để phát
+triển bộ dữ liệu ung thư của riêng họ có thể không muốn chia sẻ với những người
+khác, mặc dù nó có thể rút ngắn thời gian chữa trị đi nhiều.</li>
+</ul>
+<div><i><b>Tổng kết
+</b></i></div>
+<p>Đơn giản thì trong lĩnh vực chăm sóc sức khỏe, cũng như các ngành công nghiệp
+khác, Big Data đã, đang và sẽ còn gây nên những tác động mạnh mẽ để thúc đẩy phát
+triển, mang đến những lợi ích mới cho con người trong việc bảo vệ sức khỏe, chăm lo
+tốt cho bản thân và cộng đồng thông qua tự nâng cấp các quá trình hoạt động, xu
+hướng của các cơ sở trong ngành.
+</p>	
+<div class="backgr" >
+    <img src="bigdata23.png"  width="450" height="300">
+</div>	
+
+
+</div>
+<div class="footer">
+      <p>Group 123 làm BTL.</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,26 +21,30 @@ body {
 
 /* Header/Logo Title */
 .header {
-  padding: 1em;
   text-align: center;
-  color: #4F2050;
-  font-size: 30px;
-  height:600px;
   vertical-align: middle;
-
+  width:device-width;
+text-align:center;
+  height:100vh;
+  width:100vw;
 }
-.header div.backgr{ vertical-align:middle;}
+.backgr{
+ width:70vw;
+ height:75vh;
+}
 #Guide{
 border: 5px solid green;
 padding: 16px;
 box-sizing: border-box;
 border-radius:1em;
-width: 400px;
+width: 30vw;
+
 margin: auto;
-font-size:45px;
+font-size:3vw;
 animation: move 2s ease-in-out infinite alternate;
 top: 0;
 color:#5F4B8BFF;
+
 }
 
 
@@ -75,8 +80,9 @@ margin:25px 0;
   padding: 0;
   width: 15%;
   background-color: #f1f1f1;
-  
 }
+
+.short{display:none;}
 
 /* Sidebar links */
 .sidebar a {
@@ -102,14 +108,15 @@ margin:25px 0;
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
-  
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-        
+    top: 0;   
+    font-size:14px;  
   }
   .sidebar a {float: left;}
   .content {margin-left: 0;width:100%;}
+  .full{display:none;}
+  .short{display:inline-block;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -163,21 +170,31 @@ margin:25px 0;
 
 
 <div class="header">
-<div class="backgr" >
-    <img src="ten-major-challenges-big-data-analytics-healthcare.jpg"  width="900" height="450">
-</div>
+    <img src="images/ten-major-challenges-big-data-analytics-healthcare.jpg"  class="backgr">
 <a href="#List">
 <div id="Guide">Big Data <br>In Healthcare
 </div>
 </a>
 </div>
 
-<div class="sidebar">
+<div class="sidebar" >
   <a class="active" href="index.html">Home</a>
-  <a href="1.html">BigData Overview</a>
-  <a href="2.html">BigData in Healthcare</a> 
-  <a href="3.html">Applications of BigData in Healthcare</a>
-  <a href="4.html">Challenges of BigData in Healthcare</a>
+  <a href="1.html">
+  <span class="full">BigData Overview</span>
+  <span class="short">Overview</span>
+  </a>
+  <a href="2.html">
+  <span class="full">BigData in Healthcare</span>
+  <span class="short">Healthcare</span>
+  </a> 
+  <a href="3.html">
+  <span class="full">Applications of BigData in Healthcare</span>
+  <span class="short">Applications</span>
+  </a>
+  <a href="4.html">
+  <span class="full">Challenges of BigData in Healthcare</span>
+  <span class="short">Challenges</span>
+  </a>
   <a href="about.html">About Us</a>
 </div>
 

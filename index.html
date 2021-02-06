@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Bigdata in Healthcare</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,8 +15,11 @@ a{text-decoration:none;color:white;}
 body {
   font-family: Arial;
   font-size: 16px;
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 /* Header/Logo Title */
@@ -27,6 +30,7 @@ body {
 text-align:center;
   height:100vh;
   width:100vw;
+box-sizing:border-box;
 }
 .backgr{
  width:70vw;
@@ -49,14 +53,14 @@ color:#5F4B8BFF;
 
 
 /* Page Content */
-.content {  background: #FFF;
+.content {  
+  background: #FFF;
   color: white;
   float:right;
   width:85%;
-  
-  padding: 1em;
   height:600px;
   box-sizing: border-box;
+  padding:1em;
  }
 
 .boxx{
@@ -64,7 +68,7 @@ background: #FC766AFF;
 border-radius:25px;
 padding:10px;
 font-size:35px;
-width: 600px;
+width: 80vw;
 margin:25px 0;
 }
 
@@ -80,9 +84,10 @@ margin:25px 0;
   padding: 0;
   width: 15%;
   background-color: #f1f1f1;
+  box-sizing:border-box;
 }
 
-.short{display:none;}
+.short{display:none;font-size:12px;}
 
 /* Sidebar links */
 .sidebar a {
@@ -104,19 +109,21 @@ margin:25px 0;
   color: white;
 }
 
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100%;
+    width: 100vw;
     position: sticky;
     position: -webkit-sticky;
     top: 0;   
     font-size:14px;  
   }
   .sidebar a {float: left;}
-  .content {margin-left: 0;width:100%;}
+  .content {margin-left: 0;width:100%;height:100vh;padding-top:40px;}
   .full{display:none;}
   .short{display:inline-block;}
+  .boxx{font-size:30px;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -127,13 +134,16 @@ margin:25px 0;
   }
   .sidebar {position: relative;}
 
+
 }
+
 .footer {
   clear: both;
   background: #666;
   color: white;
   padding: 1em;
   text-align: center;
+  width:100vw;
 }
 
 /* keyframes */
@@ -178,7 +188,7 @@ margin:25px 0;
 </div>
 
 <div class="sidebar" >
-  <a class="active" href="index.html">Home</a>
+  <a class="active" href="index.html"><span class="full">Home</span><span class="short">Home</span></a>
   <a href="1.html">
   <span class="full">BigData Overview</span>
   <span class="short">Overview</span>
@@ -195,7 +205,7 @@ margin:25px 0;
   <span class="full">Challenges of BigData in Healthcare</span>
   <span class="short">Challenges</span>
   </a>
-  <a href="about.html">About Us</a>
+  <a href="about.html"><span class="full">About Us</span><span class="short">About</span></a>
 </div>
 
 <div class="content" id="List">

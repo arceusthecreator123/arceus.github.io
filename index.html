@@ -20,7 +20,9 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+   
 }
+
 
 /* Header/Logo Title */
 .header {
@@ -31,6 +33,7 @@ body {
   height:100vh;
   width:100vw;
 box-sizing:border-box;
+
 }
 
 
@@ -58,22 +61,25 @@ color:#5F4B8BFF;
 
 /* Page Content */
 .content {  
-  background: #FFF;
+  background-image: url('3fac59e003c3c94c11172d1ae82e42e9.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
   float:right;
   width:85%;
-  height:600px;
   box-sizing: border-box;
   padding:1em;
  }
 
 .boxx{
-background: #FC766AFF;
+color: #FC766AFF;
 border-radius:25px;
 padding:10px;
 font-size:35px;
-width: 80vw;
+width: 50%;
 margin:25px 0;
+border:2px dotted #FC766AFF;
 }
 
 
@@ -185,13 +191,14 @@ margin:25px 0;
 
 <div class="header">
 <div class="container">
-    <img src="images/ten-major-challenges-big-data-analytics-healthcare.jpg">
+    <img src="images/ten-major-challenges-big-data-analytics-healthcare.jpg" style="opacity=0.5">
 </div>
 <a href="#List">
-<div id="Guide">Big Data <br>In Healthcare
+<div id="Guide" >Big Data <br>In Healthcare
 </div>
 </a>
 </div>
+
 
 <div class="sidebar" >
   <a class="active" href="index.html"><span class="full">Home</span><span class="short">Home</span></a>
@@ -214,26 +221,37 @@ margin:25px 0;
   <a href="about.html"><span class="full">About Us</span><span class="short">About</span></a>
 </div>
 
-<div class="content" id="List">
+<div class="content" id="List" style="top:600px;">
 <a href='1.html'>
-<div class="boxx" id="bo1">Khái quát về Big Data
+<div class="boxx" id="bo1" style="text-align:center;">
+<img src="images/bigdata0.jpg" width="450px" height="300px">
+<br>BigData Overview
 </div>
 </a>
-<div style="float:right;">
+<br>
+<div align="right" >
 <a href='2.html'>
-<div class="boxx" style="background:#5B84B1FF;" id="bo2" >Big Data trong Y tế và Chăm sóc Sức Khỏe
+<div class="boxx" style="color:#5B84B1FF;text-align:center;border:2px dotted #5B84B1FF;" id="bo2" >
+<img src="images/bigdata2.jpg" width="450px" height="300px">
+<br>BigData in Healthcare
 </div>
 </a>
 </div>
-<div style="float:left;">
+<br>
+<div align="left" >
 <a href='3.html'>
-<div class="boxx" style="background:#E69A8DFF;" id="bo3">Ứng dụng thực tế của Big Data trong chăm sóc sức khỏe
+<div class="boxx" style="color:#E69A8DFF;text-align:center;border:2px dotted #E69A8DFF;" id="bo3">
+<img src="images/bigdata15.jpg" width="450px" height="300px">
+<br>Applications of BigData in Healthcare
 </div>
 </a>
 </div>
-<div style="float:right;">
+<br>
+<div align="right" >
 <a href='4.html'>
-<div class="boxx" style="background:#5F4B8BFF;" id="bo4" >Những trở ngại còn sót lại trong việc ứng dụng Big Data trong chăm sóc sức khỏe
+<div class="boxx" style="color:#5F4B8BFF;text-align:center;border:2px dotted #5F4B8BFF;" id="bo4" >
+<img src="images/Lighthouse-tired-doctor-700x400.jpg" width="450px" height="300px">
+<br>Challenges of BigData in Healthcare
 </div>
 </a>
 </div>

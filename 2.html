@@ -21,15 +21,15 @@ body {
 
 /* Header/Logo Title */
 .header {
-  padding: 1em;
   text-align: center;
   color: #4F2050;
   font-size: 30px;
-  height:10vh;
+  height:15vh;
   width:100vw;
   vertical-align: middle;
+  background-color:#dfdada;
 }
-.header div.backgr{ vertical-align:middle;}
+.head{width:10vw;height:15vh;}
 #Guide{
 border: 5px solid green;
 padding: 16px;
@@ -44,7 +44,7 @@ color:#5F4B8BFF;
 
 /* Page Content */
 .content {  background: black;
-  color: white;
+  color: #a5aeb4;
   float:right;
   width:85%;
   padding: 1em;
@@ -66,10 +66,10 @@ color:white;
 /* The side navigation menu */
 .sidebar {
   position: sticky;
-  top: 0;
+  top: 15px;
   float:left;
   font-size: 20px;
-      margin: 0;
+  margin: 0;
   padding: 0;
   width: 15%;
   background-color: #f1f1f1;
@@ -123,6 +123,14 @@ color:white;
 
 }
 
+.footer {
+  clear: both;
+  background: #666;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  width:100vw;
+}
 
 
 /* keyframes */
@@ -159,23 +167,23 @@ color:white;
 
 <a href="index.html">
 <div class="header">
-<div class="backgr">
-<img src="images/download.jpg" width="50vw" height="100vh" style="padding-right:20vw;">
-    <img src="images/ten-major-challenges-big-data-analytics-healthcare.jpg"  width="100vw" height="100vh">
-</div>
+
+<img src="images/download.jpg" class="head" style="padding-right:20vw;">
+<img src="images/ten-major-challenges-big-data-analytics-healthcare.jpg"  class="head">
+
 </div>
 </a>
 
 
 
 <div class="sidebar" >
-  <a class="active" href="index.html"><span class="full">Home</span><span class="short">Home</span></a>
+  <a href="index.html"><span class="full">Home</span><span class="short">Home</span></a>
   <a href="1.html">
   <span class="full">BigData Overview</span>
   <span class="short">Overview</span>
   </a>
-  <a href="2.html">
-  <span class="full">BigData in Healthcare</span>
+  <a class="active" href="2.html">
+  <span  class="full">BigData in Healthcare</span>
   <span class="short">Healthcare</span>
   </a> 
   <a href="3.html">
